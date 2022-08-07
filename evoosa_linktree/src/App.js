@@ -1,17 +1,16 @@
 import React from 'react';
+import InstagramDropdown from './components/InstagramDropdown';
+import SoundCloud from './components/SoundCloud';
 
 function App() {
     return (
-        <div className = "App" >
-            <div className = "container row">
-                {
-                    items.map((item, i) => {
-                        return(
-                            ninini
-                        )
-                    })
-                }
-            </div>
+        <div className="App">
+            <InstagramDropdown/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <SoundCloud/>
         </div>
     );
 }
