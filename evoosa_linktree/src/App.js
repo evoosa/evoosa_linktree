@@ -1,6 +1,7 @@
 import React from 'react';
 import InstagramDropdown from './components/InstagramDropdown';
 import SoundCloud from './components/SoundCloud';
+import Professional from './components/Professional';
 
 function App() {
     return (
@@ -9,8 +10,12 @@ function App() {
             <br/>
             <br/>
             <br/>
-            <br/>
             <SoundCloud/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Professional/>
         </div>
     );
 }
