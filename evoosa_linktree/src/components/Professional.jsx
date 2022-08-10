@@ -1,12 +1,12 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import {Window, Error} from 'react-windows-xp';
-import {Tooltip, Button} from 'react95';
 import GlobalStyles from './GlobalStyles';
 
-// Theme
-import honey from "react95/dist/themes/honey";
+import './Styles.css'
 
+// Theme
+import honey from "react95/dist/themes/honey"
 
 const Professional = () => (
     <div>
@@ -32,10 +32,16 @@ const Professional = () => (
                     }} iconSize={"30"}
                     onClose={() => {
                     }}
+                    style={{
+                        background: "linear-gradient(150deg, #ffffff, #006fd3",
+                        fontSize: "18px",
+                        color: "#003b8c"
+                    }}
                 >Professional Linkedin</Error>
                 <br/>
                 <Error
                     title={"Professional Blog"}
+                    className={"title-bar"}
                     confirmText={"Yes PLS"}
                     onConfirm={() => {
                         window.location.href = 'https://the-devops-diaries.blogspot.com';
@@ -44,6 +50,11 @@ const Professional = () => (
                     }}
                     showMaximize={true}
                     showMinimize={true}
+                    style={{
+                        background: "linear-gradient(150deg,#000000,#079600)",
+                        fontSize: "18px",
+                        color: "greenyellow"
+                    }}
                 >"the DevOps Diaries" </Error>
 
             </Window>
