@@ -3,8 +3,6 @@ import {ThemeProvider} from 'styled-components';
 import {Window, Error} from 'react-windows-xp';
 import GlobalStyles from './GlobalStyles';
 
-import './Styles.css'
-
 // Theme
 import honey from "react95/dist/themes/honey"
 
@@ -18,13 +16,13 @@ const Professional = () => (
                 showClose={true}
                 showHelp={true}
                 showMinimize={true}
-                style={
-                    {width: "250px"}
-                }
+                style={{
+                    width: "250px"
+                }}
             >
                 <Error
                     title={"Are You Hiring?"}
-                    confirmText={"I'm Hiring"}
+                    confirmText={"Yes"}
                     showClose={true}
                     showHelp={true}
                     onConfirm={() => {
@@ -42,7 +40,7 @@ const Professional = () => (
                 <Error
                     title={"Professional Blog"}
                     className={"title-bar"}
-                    confirmText={"Yes PLS"}
+                    confirmText={"OK"}
                     onConfirm={() => {
                         window.location.href = 'https://the-devops-diaries.blogspot.com';
                     }} iconSize={"30"}
@@ -56,7 +54,6 @@ const Professional = () => (
                         color: "greenyellow"
                     }}
                 >"the DevOps Diaries" </Error>
-
             </Window>
         </ThemeProvider>
     </div>

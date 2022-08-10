@@ -5,7 +5,11 @@ import Professional from './components/Professional';
 
 function App() {
     return (
-        <div className="App">
+        <div className="App"
+             style={{
+                 fontFamily: "Lucida Console, Monaco, monospace"
+             }}
+        >
             <InstagramDropdown/>
             <br/>
             <br/>

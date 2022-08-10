@@ -11,7 +11,12 @@ const SoundCloud = () => (
         <GlobalStyles/>
         <ThemeProvider theme={honey}>
             <Tooltip text='i do (experi)mental music 😝' enterDelay={50} leaveDelay={50}>
-                <Button as='a' href='https://soundcloud.com/evoosa/tracks'>🎶 SoundCloud 🎶</Button>
+                <Button as='a'
+                        href='https://soundcloud.com/evoosa/tracks'
+                        style={{
+                            background: "linear-gradient(150deg, #ffba6a, #f26f00)"
+                        }}
+                >🎶 SoundCloud 🎶</Button>
             </Tooltip>
         </ThemeProvider>
     </div>
