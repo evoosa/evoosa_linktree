@@ -3,17 +3,10 @@ import {ThemeProvider} from 'styled-components';
 import {Window, Error} from 'react-windows-xp';
 import {Tooltip, Button} from 'react95';
 import GlobalStyles from './GlobalStyles';
-import useHistory from "react-router-dom";
+
 // Theme
 import honey from "react95/dist/themes/honey";
 
-function Redirect(url) {
-    let history = useHistory();
-
-    function handleClick() {
-        history.push(url);
-    }
-};
 
 const Professional = () => (
     <div>
@@ -28,20 +21,27 @@ const Professional = () => (
                 style={
                     {width: "250px"}
                 }
-                >
+            >
                 <Error
                     title={"Are You Hiring?"}
                     confirmText={"I'm Hiring"}
                     showClose={true}
                     showHelp={true}
+                    onConfirm={() => {
+                        window.location.href = 'https://www.linkedin.com/in/evaosher/';
+                    }} iconSize={"30"}
+                    onClose={() => {
+                    }}
                 >Professional Linkedin</Error>
                 <br/>
                 <Error
                     title={"Professional Blog"}
                     confirmText={"Yes PLS"}
-                    onConfirm={Redirect('https://the-devops-diaries.blogspot.com')}
-                    // onConfirm={<Redirect push to="https://the-devops-diaries.blogspot.com"/>}
-                    iconSize={"30"}
+                    onConfirm={() => {
+                        window.location.href = 'https://the-devops-diaries.blogspot.com';
+                    }} iconSize={"30"}
+                    onClose={() => {
+                    }}
                     showMaximize={true}
                     showMinimize={true}
                 >"the DevOps Diaries" </Error>
@@ -50,4 +50,5 @@ const Professional = () => (
         </ThemeProvider>
     </div>
 );
+
 export default Professional;
