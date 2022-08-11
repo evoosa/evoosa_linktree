@@ -9,14 +9,19 @@ import honey from "react95/dist/themes/honey";
 const SoundCloud = () => (
     <div>
         <GlobalStyles/>
-        <ThemeProvider theme={honey}>
-            <Tooltip text='i do (experi)mental music 😝' enterDelay={50} leaveDelay={50}>
+        <ThemeProvider
+            theme={honey}>
+            <Tooltip
+                text='i do (experi)mental music 😝' enterDelay={50} leaveDelay={50}>
                 <Button as='a'
                         href='https://soundcloud.com/evoosa/tracks'
                         style={{
-                            background: "linear-gradient(150deg, #ffba6a, #f26f00)"
+                            background: "linear-gradient(150deg, #ffba6a, #f26f00)",
+                            height: "50px",
+                            fontWeight: "bold",
+                            letterSpacing: "0.7px"
                         }}
-                >🎶 SoundCloud 🎶</Button>
+                >🎵 SoundCloud 🎵</Button>
             </Tooltip>
         </ThemeProvider>
     </div>

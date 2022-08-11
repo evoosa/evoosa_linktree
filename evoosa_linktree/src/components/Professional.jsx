@@ -17,7 +17,8 @@ const Professional = () => (
                 showHelp={true}
                 showMinimize={true}
                 style={{
-                    width: "250px"
+                    width: "250px",
+                    fontWeight: "bold"
                 }}
             >
                 <Error
@@ -50,7 +51,8 @@ const Professional = () => (
                     showMinimize={true}
                     style={{
                         background: "linear-gradient(150deg,#000000,#079600)",
-                        fontSize: "18px",
+                        fontSize: "16px",
+                        letterSpacing: "0.7px",
                         color: "greenyellow"
                     }}
                 >"the DevOps Diaries" </Error>

@@ -1,6 +1,14 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import {List, ListItem, Divider} from 'react95';
+import {
+    List,
+    ListItem,
+    Divider,
+    Window,
+    WindowContent,
+    WindowHeader
+} from 'react95';
+
 import GlobalStyles from './GlobalStyles';
 
 // Theme
@@ -10,13 +18,33 @@ const InstagramDropdown = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider theme={peggyPastels}>
-            <List>
-                <ListItem as='a' href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal Account</ListItem>
-                <Divider/>
-                <ListItem as='a' href='https://www.instagram.com/evoosa.art'>🎨 Art Account</ListItem>
-                <Divider/>
-                <ListItem as='a' href='https://www.instagram.com/evoosa.trying.to.sport'>💪🏾 Workout Account</ListItem>
-            </List>
+            <Window className='window'>
+                <WindowHeader active={false} className='window-header'>
+                    <span>Instagram</span>
+                </WindowHeader>
+                <WindowContent>
+                    <List>
+                        <ListItem as='a'
+                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  href='https://www.instagram.com/evoosa.art'>🎨 Art
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  href='https://www.instagram.com/evoosa.trying.to.sport'>💪🏾 Workout
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  href='https://www.facebook.com/evoosa'
+                                  style={{
+                                      background: "linear-gradient(150deg, #f4c1ca, #2fe5ff4a)"
+                                  }}
+                        >👤 Facebook</ListItem>
+                    </List>
+                </WindowContent>
+            </Window>
         </ThemeProvider>
     </div>
 );
