@@ -18,12 +18,18 @@ const Websites = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider theme={aiee}>
-            <Window className='window'>
+            <Window className='window'
+                    style={{
+                        width: "90%"
+                    }}>
                 <WindowHeader active={false} className='window-header'>
                     <span>Art Links</span>
                 </WindowHeader>
                 <WindowContent>
-                    <List>
+                    <List
+                        style={{
+                            width: "100%"
+                        }}>
                         <ListItem as='a'
                                   style={{
                                       background: "#6cbdff",

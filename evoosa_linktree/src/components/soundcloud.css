@@ -1,0 +1,26 @@
+.soundcloud-button {
+    background: linear-gradient(150deg, #ffba6a, #f26f00);
+    height: 200px;
+    /*border-radius: 10%;*/
+    width: 90%;
+    border-color: #ffc65d;
+    border-width: 5px;
+}
+
+.soundcloud-text {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #ffdbb9;
+    font-family: Lucida Console, Monaco, monospace;
+    font-weight: bolder;
+}
+
+.soundcloud-logo {
+    width: 130px;
+    height: 100px;
+}
+
+.soundcloud-button:hover {
+    background: linear-gradient(150deg, #ff8900, #ff0091);
+}

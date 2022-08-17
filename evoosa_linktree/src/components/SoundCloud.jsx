@@ -5,26 +5,27 @@ import GlobalStyles from './GlobalStyles';
 
 // Theme
 import honey from "react95/dist/themes/honey";
+import "./soundcloud.css"
 
 const SoundCloud = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider
             theme={honey}>
-            <Tooltip
-                text='i do (experi)mental music 😝' enterDelay={50} leaveDelay={50}>
-                <Button as='a'
-                        href='https://soundcloud.com/evoosa/tracks'
-                        style={{
-                            background: "linear-gradient(150deg, #ffba6a, #f26f00)",
-                            height: "80px",
-                            width: "250px",
-                            fontWeight: "bold",
-                            fontSize: "20px",
-                            letterSpacing: "0.7px"
-                        }}
-                >🎵 SoundCloud 🎵</Button>
-            </Tooltip>
+            <button
+               onClick={() => {
+                    window.location.href = 'https://soundcloud.com/evoosa/tracks';
+                }}
+                className={"soundcloud-button"}>
+                <img className={"soundcloud-logo"}
+                     src="https://evoosa-art.s3.eu-central-1.amazonaws.com/static/images/soundcloud.webp"
+                />
+                <br/>
+                <br/>
+                <div className={"soundcloud-text"}>
+                    ♪ My Music ♪
+                </div>
+            </button>
         </ThemeProvider>
     </div>
 );

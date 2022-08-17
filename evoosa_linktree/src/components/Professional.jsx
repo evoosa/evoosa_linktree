@@ -17,7 +17,7 @@ const Professional = () => (
                 showHelp={true}
                 showMinimize={true}
                 style={{
-                    width: "250px",
+                    width: "90%",
                     fontWeight: "bold"
                 }}
             >

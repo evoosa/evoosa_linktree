@@ -18,16 +18,18 @@ const InstagramDropdown = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider theme={peggyPastels}>
-            <Window className='window'>
+            <Window className='window'
+                    style={{
+                        width: "90%"
+                    }}>
                 <WindowHeader active={false} className='window-header'>
                     <span>Instagram</span>
                 </WindowHeader>
                 <WindowContent>
                     <List
-                    style={{
-                        width: "200px"
-                    }}
-                    >
+                        style={{
+                            width: "100%"
+                        }}>
                         <ListItem as='a'
                                   href='https://www.instagram.com/evoosa.art'>🎨 Art
                         </ListItem>
