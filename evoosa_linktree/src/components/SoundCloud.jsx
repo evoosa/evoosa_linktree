@@ -17,8 +17,10 @@ const SoundCloud = () => (
                         href='https://soundcloud.com/evoosa/tracks'
                         style={{
                             background: "linear-gradient(150deg, #ffba6a, #f26f00)",
-                            height: "50px",
+                            height: "80px",
+                            width: "250px",
                             fontWeight: "bold",
+                            fontSize: "20px",
                             letterSpacing: "0.7px"
                         }}
                 >🎵 SoundCloud 🎵</Button>

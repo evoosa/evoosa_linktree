@@ -23,13 +23,17 @@ const InstagramDropdown = () => (
                     <span>Instagram</span>
                 </WindowHeader>
                 <WindowContent>
-                    <List>
+                    <List
+                    style={{
+                        width: "200px"
+                    }}
+                    >
                         <ListItem as='a'
-                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal
+                                  href='https://www.instagram.com/evoosa.art'>🎨 Art
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  href='https://www.instagram.com/evoosa.art'>🎨 Art
+                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'

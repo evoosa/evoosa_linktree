@@ -33,21 +33,20 @@ const Professional = () => (
                     }}
                     style={{
                         background: "linear-gradient(150deg, #ffffff, #006fd3",
-                        fontSize: "18px",
-                        color: "#003b8c"
+                        fontSize: "25px",
+                        color: "#003b8c",
+                        letterSpacing: "0.7px"
                     }}
-                >Professional Linkedin</Error>
+                >Linkedin</Error>
                 <br/>
                 <Error
                     title={"Professional Blog"}
-                    className={"title-bar"}
                     confirmText={"OK"}
                     onConfirm={() => {
                         window.location.href = 'https://the-devops-diaries.blogspot.com';
                     }} iconSize={"30"}
                     onClose={() => {
                     }}
-                    showMaximize={true}
                     showMinimize={true}
                     style={{
                         background: "linear-gradient(150deg,#000000,#079600)",
