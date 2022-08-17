@@ -15,17 +15,17 @@ function App() {
                  alignContent: "center"
              }}>
             <Box sx={{width: '100%'}}>
-                <Grid container spacing={{  md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                    <Grid item xs={3}>
+                <Grid container spacing={{xs: 2, md: 5}} columns={{xs: 4, md: 16}}>
+                    <Grid item xs={4}>
                         <InstagramDropdown/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={4}>
                         <SoundCloud/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={4}>
                         <Websites/>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={4}>
                         <Professional/>
                     </Grid>
                 </Grid>
