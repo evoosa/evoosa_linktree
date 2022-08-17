@@ -1,11 +1,10 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import {Tooltip, Button} from 'react95';
 import GlobalStyles from './GlobalStyles';
 
 // Theme
 import honey from "react95/dist/themes/honey";
-import "./soundcloud.css"
+import "../global.css"
 
 const SoundCloud = () => (
     <div>

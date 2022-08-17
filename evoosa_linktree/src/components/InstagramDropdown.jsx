@@ -20,7 +20,7 @@ const InstagramDropdown = () => (
         <ThemeProvider theme={peggyPastels}>
             <Window className='window'
                     style={{
-                        width: "90%"
+                        width: "95%"
                     }}>
                 <WindowHeader active={false} className='window-header'>
                     <span>Instagram</span>
