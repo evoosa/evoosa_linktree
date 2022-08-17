@@ -37,15 +37,14 @@ function App() {
                                     <InstagramDropdown/>
                                 </Grid>
                                 <Grid item xs={4}>
+                                    <Art/>
+                                </Grid>
+                                <Grid item xs={4}>
                                     <SoundCloud/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Professional/>
                                 </Grid>
-                                <Grid item xs={4}>
-                                    <Art/>
-                                </Grid>
-
                             </Grid>
                         </Box>
                     </WindowContent>
