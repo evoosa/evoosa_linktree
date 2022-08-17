@@ -12,12 +12,14 @@ const SoundCloud = () => (
         <ThemeProvider
             theme={honey}>
             <button
-               onClick={() => {
+                onClick={() => {
                     window.location.href = 'https://soundcloud.com/evoosa/tracks';
                 }}
                 className={"soundcloud-button"}>
-                <img className={"soundcloud-logo"}
-                     src="https://evoosa-art.s3.eu-central-1.amazonaws.com/static/images/soundcloud.webp"
+                <img
+                    className={"soundcloud-logo"}
+                    src="https://evoosa-art.s3.eu-central-1.amazonaws.com/static/images/soundcloud.webp"
+                    alt={"soundcloud_logo"}
                 />
                 <br/>
                 <br/>

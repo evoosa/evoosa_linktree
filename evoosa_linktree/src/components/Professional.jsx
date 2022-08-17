@@ -1,6 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import {Window, Error} from 'react-windows-xp';
+import {Error} from 'react-windows-xp';
 import GlobalStyles from './GlobalStyles';
 import {
     Divider,
