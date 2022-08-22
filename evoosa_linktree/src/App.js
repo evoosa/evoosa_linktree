@@ -1,6 +1,7 @@
 import React from 'react';
 import InstagramDropdown from './components/InstagramDropdown';
 import SoundCloud from './components/SoundCloud';
+import MusicalTwitter from './components/MusicalTwitter';
 import Professional from './components/Professional';
 import Art from "./components/Art";
 import Grid from '@mui/material/Grid';
@@ -28,7 +29,7 @@ function App() {
                             align: "center"
                         }}>
                     <WindowHeader active={true} className='window-header'>
-                        <span>Art Links</span>
+                        <span>evoosa's linktree</span>
                     </WindowHeader>
                     <WindowContent>
                         <Box sx={{width: '100%'}}>
@@ -41,6 +42,8 @@ function App() {
                                 </Grid>
                                 <Grid item xs={4}>
                                     <SoundCloud/>
+                                    <br/>
+                                    <MusicalTwitter/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Professional/>

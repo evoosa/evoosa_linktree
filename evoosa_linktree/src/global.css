@@ -1,14 +1,18 @@
 body {
     background-color: black;
+    background-image: url("./gradient_3_r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .application {
     font-family: Lucida Console, Monaco, monospace;
 }
 
+/*SoundCloud*/
 .soundcloud-button {
     background: linear-gradient(150deg, #ffba6a, #f26f00);
-    height: 250px;
+    height: 200px;
     width: 95%;
     border-color: #ffc65d;
     border-width: 5px;
@@ -18,7 +22,7 @@ body {
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.7px;
-    color: #ffdbb9;
+    color: #ffe9d1;
     font-family: Lucida Console, Monaco, monospace;
     font-weight: bolder;
 }
@@ -30,4 +34,31 @@ body {
 
 .soundcloud-button:hover {
     background: linear-gradient(150deg, #ff8900, #ff0091);
+}
+
+/*Musical Twitter*/
+.twitter-button {
+    background: linear-gradient(150deg, #4ebff1ff, #0084f2);
+    height: 110px;
+    width: 95%;
+    border-color: #aad7ff;
+    border-width: 5px;
+}
+
+.twitter-text {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    font-family: Lucida Console, Monaco, monospace;
+    font-weight: bolder;
+}
+
+.twitter-logo {
+    width: 60px;
+    height: 50px;
+}
+
+.twitter-button:hover {
+    background: linear-gradient(150deg, #0084f2, #00d0aa);
 }
