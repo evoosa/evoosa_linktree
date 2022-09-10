@@ -11,7 +11,6 @@ body {
     align: center;
 }
 
-
 .window {
     width: 95%;
 }
@@ -23,6 +22,18 @@ body {
 
 .application {
     font-family: Lucida Console, Monaco, monospace;
+}
+
+/* Art */
+.emphasized-art-item-item {
+    background: #6cbdff;
+    flex-wrap: wrap;
+}
+
+.emphasized-art-item-text {
+    color: #ffffff;
+    font-weight: bold;
+    /*font-size: min(calc(10px + 0.390625vw), 15px);*/
 }
 
 /* List Items */

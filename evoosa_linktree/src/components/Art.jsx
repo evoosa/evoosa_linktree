@@ -13,12 +13,6 @@ import GlobalStyles from './GlobalStyles';
 // Theme
 import aiee from "react95/dist/themes/aiee";
 
-const listItemStyle = {
-    // fontSize: "calc(1em)"
-    // fontSize: 0.006 *(this.width)
-    // fontSize: "calc(0.99vw)"
-}
-
 const Art = () => (
     <div>
         <GlobalStyles/>
@@ -30,18 +24,26 @@ const Art = () => (
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
+                                  className={'emphasized-art-item-item'}
                                   style={{
-                                      background: "#6cbdff",
-                                      color: "#ffffff",
-                                      fontWeight: "bold",
-                                      fontSize: "min(calc(10px + 0.390625vw), 15px)",
                                       height: "60px",
                                       lineHeight: "25px",
+                                      fontSize: "min(calc(10px + 0.390625vw), 15px)"
                                   }}
                                   href='http://i-need-art-supplies-help.pasten.life/'>
-                            🖌️ I Need Art Supplies,
-                            <br/>
-                            Help!
+                            <div className={'emphasized-art-item-text'}>
+                                🖌️ I Need Art Supplies,
+                                <br/>
+                                Help!
+                            </div>
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  className={'emphasized-art-item-item'}
+                                  href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>
+                            <div className={'emphasized-art-item-text'}>
+                                🎴 TAKI Cards
+                            </div>
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
@@ -49,19 +51,11 @@ const Art = () => (
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  style={listItemStyle}
                                   href='https://drive.google.com/drive/folders/1uYQCSDochKBivBJUP6nAxRGGcdTIWxt8?usp=sharing'>💾
                             Google Drive
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  style={listItemStyle}
-                                  href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>🎴
-                            TAKI Cards
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  style={listItemStyle}
                                   href='https://visit.evoosa.art'>📖 Portfolio
                         </ListItem>
                     </List>
