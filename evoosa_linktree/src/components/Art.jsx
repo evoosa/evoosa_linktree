@@ -56,7 +56,7 @@ const Art = () => (
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  href='https://visit.evoosa.art'>📖 Portfolio
+                                  href='https://evoosa-art-portfolio.pasten.life/'>📖 Portfolio
                         </ListItem>
                     </List>
                 </WindowContent>
