@@ -14,32 +14,22 @@ import GlobalStyles from './GlobalStyles';
 // Theme
 import peggyPastels from "react95/dist/themes/peggysPastels";
 
-const InstagramDropdown = () => (
+const Social = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider theme={peggyPastels}>
-            <Window className='window'
-                    style={{
-                        width: "95%"
-                    }}>
+            <Window className='window'>
                 <WindowHeader active={false} className='window-header'>
-                    <span>Instagram</span>
+                    <span>Social</span>
                 </WindowHeader>
                 <WindowContent>
-                    <List
-                        style={{
-                            width: "100%"
-                        }}>
+                    <List className={'window-list'}>
                         <ListItem as='a'
-                                  href='https://www.instagram.com/evoosa.art'>🎨 Art
+                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal IG
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  href='https://www.instagram.com/evoosa.trying.to.sport'>💪🏾 Workout
+                                  href='https://www.instagram.com/evoosa.trying.to.sport'>💪🏾 Workout IG
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
@@ -47,11 +37,11 @@ const InstagramDropdown = () => (
                                   style={{
                                       background: "linear-gradient(150deg, #f4c1ca, #2fe5ff4a)"
                                   }}
-                        >👤 Facebook</ListItem>
+                        >👤 Personal FB</ListItem>
                     </List>
                 </WindowContent>
             </Window>
         </ThemeProvider>
     </div>
 );
-export default InstagramDropdown;
+export default Social;

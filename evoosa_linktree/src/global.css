@@ -5,12 +5,38 @@ body {
     background-size: cover;
 }
 
+/* Window */
+.app-window {
+    width: 90%;
+    align: center;
+}
+
+
+.window {
+    width: 95%;
+}
+
+.window-list {
+    min-width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+}
+
 .application {
     font-family: Lucida Console, Monaco, monospace;
 }
 
-/*SoundCloud*/
-.soundcloud-button {
+/* List Items */
+.emoji {
+    width: 21px;
+    padding-right: 10px;
+}
+
+.list-item {
+    float: left;
+}
+
+/*Spotify*/
+.spotify-button {
     background: linear-gradient(150deg, #ffba6a, #f26f00);
     height: 200px;
     width: 95%;
@@ -18,7 +44,7 @@ body {
     border-width: 5px;
 }
 
-.soundcloud-text {
+.spotify-text {
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.7px;
@@ -27,12 +53,12 @@ body {
     font-weight: bolder;
 }
 
-.soundcloud-logo {
+.spotify-logo {
     width: 130px;
     height: 100px;
 }
 
-.soundcloud-button:hover {
+.spotify-button:hover {
     background: linear-gradient(150deg, #ff8900, #ff0091);
 }
 

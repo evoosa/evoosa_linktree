@@ -1,8 +1,7 @@
 import React from 'react';
-import InstagramDropdown from './components/InstagramDropdown';
-import SoundCloud from './components/SoundCloud';
-import MusicalTwitter from './components/MusicalTwitter';
-import Professional from './components/Professional';
+import Social from './components/Social';
+import Music from './components/Music';
+import OProfessional from './components/Professional';
 import Art from "./components/Art";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -23,30 +22,25 @@ function App() {
         <div className="application">
             <GlobalStyles/>
             <ThemeProvider theme={candy}>
-                <Window className='window'
-                        style={{
-                            width: "90%",
-                            align: "center"
-                        }}>
-                    <WindowHeader active={true} className='window-header'>
+                <Window className={'app-window'}
+                    >
+                    <WindowHeader active={true}>
                         <span>evoosa's linktree</span>
                     </WindowHeader>
                     <WindowContent>
                         <Box sx={{width: '100%'}}>
                             <Grid container spacing={{xs: 2, md: 5}} columns={{xs: 4, md: 16}}>
                                 <Grid item xs={4}>
-                                    <InstagramDropdown/>
+                                    <Social/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Art/>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <SoundCloud/>
-                                    <br/>
-                                    <MusicalTwitter/>
+                                    <Music/>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <Professional/>
+                                    <OProfessional/>
                                 </Grid>
                             </Grid>
                         </Box>

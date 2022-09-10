@@ -9,26 +9,26 @@ import {
 } from 'react95';
 
 import GlobalStyles from './GlobalStyles';
+
 // Theme
 import aiee from "react95/dist/themes/aiee";
+
+const listItemStyle = {
+    // fontSize: "calc(1em)"
+    // fontSize: 0.006 *(this.width)
+    // fontSize: "calc(0.99vw)"
+}
 
 const Art = () => (
     <div>
         <GlobalStyles/>
         <ThemeProvider theme={aiee}>
-            <Window className='window'
-                    style={{
-                        width: "95%"
-                    }}>
+            <Window className='window'>
                 <WindowHeader active={false} className='window-header'>
                     <span>Art</span>
                 </WindowHeader>
                 <WindowContent>
-                    <List
-                        style={{
-                            width: "100%",
-                        }}
-                    >
+                    <List className={'window-list'}>
                         <ListItem as='a'
                                   style={{
                                       background: "#6cbdff",
@@ -45,26 +45,24 @@ const Art = () => (
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  style={{
-                                      fontSize: "min(calc(10px + 0.390625vw), 15px)"
-                                  }}
-                                  href='https://visit.evoosa.art'>📖 Portfolio Website
+                                  href='https://www.instagram.com/evoosa.art'>🎨 Instagram
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  style={{
-                                      fontSize: "min(calc(10px + 0.390625vw), 15px)"
-                                  }}
+                                  style={listItemStyle}
                                   href='https://drive.google.com/drive/folders/1uYQCSDochKBivBJUP6nAxRGGcdTIWxt8?usp=sharing'>💾
                             Google Drive
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  style={{
-                                      fontSize: "min(calc(10px + 0.390625vw), 15px)"
-                                  }}
+                                  style={listItemStyle}
                                   href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>🎴
-                            TAKI Cards Project
+                            TAKI Cards
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  style={listItemStyle}
+                                  href='https://visit.evoosa.art'>📖 Portfolio
                         </ListItem>
                     </List>
                 </WindowContent>
