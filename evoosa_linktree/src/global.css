@@ -24,16 +24,20 @@ body {
     font-family: Lucida Console, Monaco, monospace;
 }
 
-/* Art */
-.emphasized-art-item-item {
-    background: #6cbdff;
+.list-item-style-override {
+    overflow: hidden;
+    font-size: calc(0.1vw + 80%);
     flex-wrap: wrap;
+}
+
+/* Art */
+.emphasized-art-item {
+    background: #6cbdff;
 }
 
 .emphasized-art-item-text {
     color: #ffffff;
     font-weight: bold;
-    /*font-size: min(calc(10px + 0.390625vw), 15px);*/
 }
 
 /* List Items */

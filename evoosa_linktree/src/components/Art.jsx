@@ -24,14 +24,13 @@ const Art = () => (
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
-                                  className={'emphasized-art-item-item'}
+                                  className={'list-item-style-override emphasized-art-item'}
                                   style={{
                                       height: "60px",
                                       lineHeight: "25px",
-                                      fontSize: "min(calc(10px + 0.390625vw), 15px)"
                                   }}
                                   href='http://i-need-art-supplies-help.pasten.life/'>
-                            <div className={'emphasized-art-item-text'}>
+                            <div className={'emphasized-art-item-text list-item-style-override'}>
                                 🖌️ I Need Art Supplies,
                                 <br/>
                                 Help!
@@ -39,23 +38,26 @@ const Art = () => (
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  className={'emphasized-art-item-item'}
+                                  className={'list-item-style-override emphasized-art-item'}
                                   href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>
-                            <div className={'emphasized-art-item-text'}>
+                            <div className={'emphasized-art-item-text list-item-style-override'}>
                                 🎴 TAKI Cards
                             </div>
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://www.instagram.com/evoosa.art'>🎨 Instagram
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://drive.google.com/drive/folders/1uYQCSDochKBivBJUP6nAxRGGcdTIWxt8?usp=sharing'>💾
                             Google Drive
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://evoosa-art-portfolio.pasten.life/'>📖 Portfolio
                         </ListItem>
                     </List>

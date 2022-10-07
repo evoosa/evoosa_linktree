@@ -25,11 +25,13 @@ const Professional = () => (
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://www.linkedin.com/in/evaosher/'
                         >👩‍💻 Linkedin
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://the-devops-diaries.blogspot.com'
                         >📕 Blog
                         </ListItem>
