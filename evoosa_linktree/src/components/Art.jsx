@@ -28,12 +28,13 @@ const Art = () => (
                                   style={{
                                       height: "60px",
                                       lineHeight: "25px",
+                                      textAlignLast: "left"
                                   }}
                                   href='https://i-need-art-supplies-help.pasten.life/'>
                             <div className={'emphasized-art-item-text list-item-style-override'}>
-                                🖌️ I Need Art Supplies,
+                                🖌️ I Need Art
                                 <br/>
-                                Help!
+                                &nbsp;&nbsp;&nbsp;Supplies, Help!
                             </div>
                         </ListItem>
                         <Divider/>
