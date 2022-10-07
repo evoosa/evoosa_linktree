@@ -29,7 +29,7 @@ const Art = () => (
                                       height: "60px",
                                       lineHeight: "25px",
                                   }}
-                                  href='http://i-need-art-supplies-help.pasten.life/'>
+                                  href='https://i-need-art-supplies-help.pasten.life/'>
                             <div className={'emphasized-art-item-text list-item-style-override'}>
                                 🖌️ I Need Art Supplies,
                                 <br/>
