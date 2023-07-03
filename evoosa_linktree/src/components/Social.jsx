@@ -31,11 +31,6 @@ const Social = () => (
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://www.instagram.com/evoosa.trying.to.sport'>💪🏾 Workout IG
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
                                   href='https://www.facebook.com/evoosa'
                                   style={{
                                       background: "linear-gradient(150deg, #f4c1ca, #2fe5ff4a)"

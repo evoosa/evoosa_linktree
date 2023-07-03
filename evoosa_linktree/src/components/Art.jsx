@@ -1,12 +1,7 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
 
-import {
-    Divider,
-    WindowContent,
-    WindowHeader,
-    Window, List, ListItem
-} from 'react95';
+import {Divider, List, ListItem, Window, WindowContent, WindowHeader} from 'react95';
 
 import GlobalStyles from './GlobalStyles';
 
@@ -24,29 +19,6 @@ const Art = () => (
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
-                                  className={'list-item-style-override emphasized-art-item'}
-                                  style={{
-                                      height: "60px",
-                                      lineHeight: "25px",
-                                      textAlignLast: "left"
-                                  }}
-                                  href='https://i-need-art-supplies-help.pasten.life/'>
-                            <div className={'emphasized-art-item-text list-item-style-override'}>
-                                🖌️ I Need Art
-                                <br/>
-                                &nbsp;&nbsp;&nbsp;Supplies, Help!
-                            </div>
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={'list-item-style-override emphasized-art-item'}
-                                  href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>
-                            <div className={'emphasized-art-item-text list-item-style-override'}>
-                                🎴 TAKI Cards
-                            </div>
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
                                   className={"list-item-style-override"}
                                   href='https://www.instagram.com/evoosa.art'>🎨 Instagram
                         </ListItem>
@@ -58,8 +30,19 @@ const Art = () => (
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://evoosa-art-portfolio.pasten.life/'>📖 Portfolio
+                                  className={'list-item-style-override emphasized-art-item'}
+                                  href='https://drive.google.com/drive/folders/1B33pB2WQSOMYm6kaMRjjkyu_-_7gtEvy?usp=sharing'>
+                            <div className={'emphasized-art-item-text list-item-style-override'}>
+                                🎴 Tarot Cards
+                            </div>
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  className={'list-item-style-override emphasized-art-item'}
+                                  href='https://drive.google.com/drive/folders/1auazGwaqwvtS_GP66FI_GBwrBxeGKZCP?usp=sharing'>
+                            <div className={'emphasized-art-item-text list-item-style-override'}>
+                                🎴 TAKI Cards
+                            </div>
                         </ListItem>
                     </List>
                 </WindowContent>

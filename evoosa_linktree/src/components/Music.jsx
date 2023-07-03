@@ -35,12 +35,6 @@ const Music = () => (
                                   href='https://music.apple.com/us/artist/evoosa/1643603399'
                         >🍎‍ Apple Music
                         </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://twitter.com/evoosic'
-                        >🐦 Twitter
-                        </ListItem>
                     </List>
                 </WindowContent>
             </Window>

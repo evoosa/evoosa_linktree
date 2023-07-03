@@ -31,13 +31,13 @@ function App() {
                         <Box sx={{width: '100%'}}>
                             <Grid container spacing={{xs: 2, md: 5}} columns={{xs: 4, md: 16}}>
                                 <Grid item xs={4}>
-                                    <Social/>
-                                </Grid>
-                                <Grid item xs={4}>
                                     <Art/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Music/>
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <Social/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <OProfessional/>
