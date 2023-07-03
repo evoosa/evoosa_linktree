@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+    background-image: url("./gradient_3_r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Window */
+.app-window {
+    width: 90%;
+    align: center;
+}
+
+.window {
+    width: 95%;
+}
+
+.window-list {
+    min-width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+}
+
+.application {
+    font-family: Lucida Console, Monaco, monospace;
+}
+
+.list-item-style-override {
+    overflow: hidden;
+    font-size: calc(0.1vw + 80%);
+    flex-wrap: wrap;
+}
+
+/* Art */
+.emphasized-art-item {
+    background: #6cbdff;
+}
+
+.emphasized-art-item-text {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* List Items */
+.emoji {
+    width: 21px;
+    padding-right: 10px;
+}
+
+.list-item {
+    float: left;
+}
+
+/*Spotify*/
+.spotify-button {
+    background: linear-gradient(150deg, #ffba6a, #f26f00);
+    height: 200px;
+    width: 95%;
+    border-color: #ffc65d;
+    border-width: 5px;
+}
+
+.spotify-text {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #ffe9d1;
+    font-family: Lucida Console, Monaco, monospace;
+    font-weight: bolder;
+}
+
+.spotify-logo {
+    width: 130px;
+    height: 100px;
+}
+
+.spotify-button:hover {
+    background: linear-gradient(150deg, #ff8900, #ff0091);
+}
+
+/*Musical Twitter*/
+.twitter-button {
+    background: linear-gradient(150deg, #4ebff1ff, #0084f2);
+    height: 110px;
+    width: 95%;
+    border-color: #aad7ff;
+    border-width: 5px;
+}
+
+.twitter-text {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    font-family: Lucida Console, Monaco, monospace;
+    font-weight: bolder;
+}
+
+.twitter-logo {
+    width: 60px;
+    height: 50px;
+}
+
+.twitter-button:hover {
+    background: linear-gradient(150deg, #0084f2, #00d0aa);
+}

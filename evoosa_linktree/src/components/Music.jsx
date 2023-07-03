@@ -12,28 +12,28 @@ import {
 import GlobalStyles from './GlobalStyles';
 
 // Theme
-import millenium from "react95/dist/themes/millenium";
+import maple from "react95/dist/themes/maple";
 
-const Professional = () => (
+const Music = () => (
     <div>
         <GlobalStyles/>
-        <ThemeProvider theme={millenium}>
+        <ThemeProvider theme={maple}>
             <Window className='window'>
                 <WindowHeader active={true} className='window-header'>
-                    <span>Professional</span>
+                    <span>Music</span>
                 </WindowHeader>
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://www.linkedin.com/in/evaosher/'
-                        >👩‍💻 Linkedin
+                                  href='https://open.spotify.com/artist/6SFyjjZ1QMiSqQl1zjk09r?si=9Te2QG5aTMWu4h1BH9ynNA'
+                        >🎵 Spotify
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://the-devops-diaries.blogspot.com'
-                        >📕 Blog
+                                  href='https://music.apple.com/us/artist/evoosa/1643603399'
+                        >🍎‍ Apple Music
                         </ListItem>
                     </List>
                 </WindowContent>
@@ -41,4 +41,4 @@ const Professional = () => (
         </ThemeProvider>
     </div>
 );
-export default Professional;
+export default Music;

@@ -12,33 +12,34 @@ import {
 import GlobalStyles from './GlobalStyles';
 
 // Theme
-import millenium from "react95/dist/themes/millenium";
+import peggyPastels from "react95/dist/themes/peggysPastels";
 
-const Professional = () => (
+const Social = () => (
     <div>
         <GlobalStyles/>
-        <ThemeProvider theme={millenium}>
+        <ThemeProvider theme={peggyPastels}>
             <Window className='window'>
-                <WindowHeader active={true} className='window-header'>
-                    <span>Professional</span>
+                <WindowHeader active={false} className='window-header'>
+                    <span>Social</span>
                 </WindowHeader>
                 <WindowContent>
                     <List className={'window-list'}>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://www.linkedin.com/in/evaosher/'
-                        >👩‍💻 Linkedin
+                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Personal IG
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://the-devops-diaries.blogspot.com'
-                        >📕 Blog
-                        </ListItem>
+                                  href='https://www.facebook.com/evoosa'
+                                  style={{
+                                      background: "linear-gradient(150deg, #f4c1ca, #2fe5ff4a)"
+                                  }}
+                        >👤 Personal FB</ListItem>
                     </List>
                 </WindowContent>
             </Window>
         </ThemeProvider>
     </div>
 );
-export default Professional;
+export default Social;

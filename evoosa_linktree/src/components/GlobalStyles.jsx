@@ -10,16 +10,19 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'ms_sans_serif';
     src: url('${ms_sans_serif}') format('woff2');
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-size: 400px;
   }
   @font-face {
     font-family: 'ms_sans_serif';
     src: url('${ms_sans_serif_bold}') format('woff2');
     font-weight: bold;
-    font-style: normal
+    font-style: normal;
+    font-size: 400px;
   }
   body {
     font-family: 'ms_sans_serif';
+    font-size: 400px;
   }
   ${styleReset}
 `;
