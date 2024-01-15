@@ -1,5 +1,5 @@
 import React from 'react';
-import Social from './components/Social';
+import Personal from './components/Personal';
 import Music from './components/Music';
 import OProfessional from './components/Professional';
 import Art from "./components/Art";
@@ -37,7 +37,7 @@ function App() {
                                     <Music/>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <Social/>
+                                    <Personal/>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <OProfessional/>

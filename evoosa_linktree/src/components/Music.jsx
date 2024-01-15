@@ -35,6 +35,16 @@ const Music = () => (
                                   href='https://music.apple.com/us/artist/evoosa/1643603399'
                         >🍎‍ Apple Music
                         </ListItem>
+                        <ListItem as='a'
+                                  className={"list-item-style-override"}
+                                  href='https://soundcloud.com/evoosa/tracks'
+                        >☁️ SoundCloud
+                        </ListItem>
+                        <ListItem as='a'
+                                  className={"list-item-style-override"}
+                                  href='https://evoosa.bandcamp.com/'
+                        >🎸 Bandcamp
+                        </ListItem>
                     </List>
                 </WindowContent>
             </Window>
