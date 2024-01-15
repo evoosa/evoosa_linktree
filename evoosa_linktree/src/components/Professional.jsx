@@ -35,6 +35,7 @@ const Professional = () => (
                                   href='https://the-devops-diaries.blogspot.com'
                         >📕 Blog
                         </ListItem>
+                        <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
                                   href='https://huggingface.co/datasets/evoosa/gemstones'
