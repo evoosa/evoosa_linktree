@@ -31,6 +31,11 @@ const Personal = () => (
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
+                                  href='https://photos.app.goo.gl/ZFJ9Eep9YsZ2JZot5'>🎨 Workshops
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://www.instagram.com/tel.aviv.history'>🏢 Tel Aviv History
                         </ListItem>
                         <Divider/>
