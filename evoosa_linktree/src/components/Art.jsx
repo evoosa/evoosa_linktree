@@ -20,13 +20,13 @@ const Art = () => (
                     <List className={'window-list'}>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://www.instagram.com/evoosa.art'>🎨 Instagram
+                                  href='https://photos.app.goo.gl/LGG21wBZwH3BEoYz9'>💼
+                            Portfolio
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
-                                  href='https://drive.google.com/drive/folders/1uYQCSDochKBivBJUP6nAxRGGcdTIWxt8?usp=sharing'>💾
-                            Google Drive
+                                  href='https://www.instagram.com/evoosa.art'>🎨 Instagram
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'

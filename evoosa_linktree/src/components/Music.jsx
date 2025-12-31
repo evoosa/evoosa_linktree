@@ -26,6 +26,12 @@ const Music = () => (
                     <List className={'window-list'}>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
+                                  href='https://photos.app.goo.gl/tWaHW2RMXAyZN6WNA'
+                        >🎧 DJ Sets
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://open.spotify.com/artist/6SFyjjZ1QMiSqQl1zjk09r?si=9Te2QG5aTMWu4h1BH9ynNA'
                         >🎵 Spotify
                         </ListItem>

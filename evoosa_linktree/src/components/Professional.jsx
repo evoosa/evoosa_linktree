@@ -38,6 +38,12 @@ const Professional = () => (
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
+                                  href='https://medium.com/@evaosher'
+                        >📘 Medium
+                        </ListItem>
+                        <Divider/>
+                        <ListItem as='a'
+                                  className={"list-item-style-override"}
                                   href='https://huggingface.co/datasets/evoosa/gemstones'
                         >🤗 Hugging Face
                         </ListItem>
