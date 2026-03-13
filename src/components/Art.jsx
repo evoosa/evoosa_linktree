@@ -1,5 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Link} from 'react-router-dom';
 
 import {Divider, List, ListItem, Window, WindowContent, WindowHeader} from 'react95';
 
@@ -18,31 +19,16 @@ const Art = () => (
                 </WindowHeader>
                 <WindowContent>
                     <List className={'window-list'}>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://photos.app.goo.gl/LGG21wBZwH3BEoYz9'>💼
-                            Portfolio
+                        <ListItem as={Link}
+                                  className={'list-item-style-override'}
+                                  to='/portfolio'>
+                            <span style={{fontWeight: '900', textShadow: '0.2px 0 currentColor, -0.2px 0 currentColor'}}>🎨 my art ↗</span>
                         </ListItem>
                         <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://www.instagram.com/evoosa.art'>🎨 Instagram
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={'list-item-style-override emphasized-art-item'}
-                                  href='https://photos.app.goo.gl/oJ517zY8tnPzRxKh7'>
-                            <div className={'emphasized-art-item-text list-item-style-override'}>
-                                🎴 Tarot Cards
-                            </div>
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={'list-item-style-override emphasized-art-item'}
-                                  href='https://photos.app.goo.gl/XQfJoKwE1anJCo1t7'>
-                            <div className={'emphasized-art-item-text list-item-style-override'}>
-                                🎴 TAKI Cards
-                            </div>
+                        <ListItem as={Link}
+                                  className={'list-item-style-override projects-nav-item'}
+                                  to='/projects'>
+                            🗂️ cool projects ↗
                         </ListItem>
                     </List>
                 </WindowContent>

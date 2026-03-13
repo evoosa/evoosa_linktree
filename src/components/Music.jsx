@@ -1,5 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Link} from 'react-router-dom';
 import {
     List,
     ListItem,
@@ -24,34 +25,16 @@ const Music = () => (
                 </WindowHeader>
                 <WindowContent>
                     <List className={'window-list'}>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://photos.app.goo.gl/tWaHW2RMXAyZN6WNA'
-                        >🎧 DJ Sets
+                        <ListItem as={Link}
+                                  className={'list-item-style-override preserve-case dj-sets-nav-item'}
+                                  to='/dj-sets'>
+                            <span style={{fontWeight: '900', textShadow: '0.2px 0 currentColor, -0.2px 0 currentColor'}}>🎧 DJ sets ↗</span>
                         </ListItem>
                         <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://open.spotify.com/artist/6SFyjjZ1QMiSqQl1zjk09r?si=9Te2QG5aTMWu4h1BH9ynNA'
-                        >🎵 Spotify
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://music.apple.com/us/artist/evoosa/1643603399'
-                        >🍎‍ Apple Music
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://soundcloud.com/evoosa/tracks'
-                        >☁️ SoundCloud
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://evoosa.bandcamp.com/'
-                        >🎸 Bandcamp
+                        <ListItem as={Link}
+                                  className={'list-item-style-override my-music-nav-item'}
+                                  to='/my-music'>
+                            🎵 my music ↗
                         </ListItem>
                     </List>
                 </WindowContent>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Link} from 'react-router-dom';
 import {
     List,
     ListItem,
@@ -24,28 +25,22 @@ const Personal = () => (
                 </WindowHeader>
                 <WindowContent>
                     <List className={'window-list'}>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://www.instagram.com/evoosa'>🙋🏽‍ Instagram
+                        <ListItem as={Link}
+                                  className={'list-item-style-override workshops-nav-item'}
+                                  to='/workshops'>
+                            <span style={{fontWeight: '900', textShadow: '0.2px 0 currentColor, -0.2px 0 currentColor'}}>🎨 workshops ↗</span>
                         </ListItem>
                         <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://photos.app.goo.gl/ZFJ9Eep9YsZ2JZot5'>🎨 Workshops
+                        <ListItem as={Link}
+                                  className={'list-item-style-override social-nav-item'}
+                                  to='/social'>
+                            📱 social media ↗
                         </ListItem>
                         <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://www.instagram.com/tel.aviv.history'>🏢 Tel Aviv History
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://www.facebook.com/evoosa'
-                                  style={{
-                                      background: "linear-gradient(150deg, #f4c1ca, #2fe5ff4a)"
-                                  }}
-                        >👤 Facebook
+                        <ListItem as={Link}
+                                  className={'list-item-style-override maps-nav-item'}
+                                  to='/maps'>
+                            🗺️ Maps ↗
                         </ListItem>
                     </List>
                 </WindowContent>

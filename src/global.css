@@ -22,6 +22,11 @@ body {
 
 .application {
     font-family: Lucida Console, Monaco, monospace;
+    text-transform: lowercase;
+}
+
+.preserve-case {
+    text-transform: none;
 }
 
 .list-item-style-override {
@@ -33,6 +38,54 @@ body {
 /* Art */
 .emphasized-art-item {
     background: #6cbdff;
+}
+
+.projects-nav-item {
+}
+
+.maps-nav-item {
+}
+
+.my-music-nav-item {
+}
+
+.my-blogs-nav-item {
+}
+
+.workshops-nav-item {
+}
+
+.social-nav-item {
+}
+
+.portfolio-instagram-cta {
+    background: #a8d4ff;
+    font-weight: 900 !important;
+    text-shadow: 0.2px 0 currentColor, -0.2px 0 currentColor !important;
+}
+
+.portfolio-instagram-cta:hover {
+    background: rgb(251, 211, 61) !important;
+}
+
+.dj-sets-cta {
+    background: #e5c474;
+    font-weight: 900 !important;
+    text-shadow: 0.2px 0 currentColor, -0.2px 0 currentColor !important;
+}
+
+.dj-sets-cta:hover {
+    background: #8e0101 !important;
+}
+
+.workshops-cta {
+    background: #f4b1bd;
+    font-weight: 900 !important;
+    text-shadow: 0.2px 0 currentColor, -0.2px 0 currentColor !important;
+}
+
+.workshops-cta:hover {
+    background: rgb(162, 219, 210) !important;
 }
 
 .emphasized-art-item-text {

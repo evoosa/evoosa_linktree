@@ -1,5 +1,6 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Link} from 'react-router-dom';
 import {
     List,
     ListItem,
@@ -27,24 +28,21 @@ const Professional = () => (
                         <ListItem as='a'
                                   className={"list-item-style-override"}
                                   href='https://www.linkedin.com/in/evaosher/'
+                                  target='_blank' rel='noreferrer'
+                                  style={{fontWeight: '900', textShadow: '0.2px 0 currentColor, -0.2px 0 currentColor'}}
                         >👩‍💻 Linkedin
                         </ListItem>
                         <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://the-devops-diaries.blogspot.com'
-                        >📕 Blog
-                        </ListItem>
-                        <Divider/>
-                        <ListItem as='a'
-                                  className={"list-item-style-override"}
-                                  href='https://medium.com/@evaosher'
-                        >📘 Medium
+                        <ListItem as={Link}
+                                  className={'list-item-style-override my-blogs-nav-item'}
+                                  to='/my-blogs'>
+                            📝 my blogs ↗
                         </ListItem>
                         <Divider/>
                         <ListItem as='a'
                                   className={"list-item-style-override"}
                                   href='https://huggingface.co/datasets/evoosa/gemstones'
+                                  target='_blank' rel='noreferrer'
                         >🤗 Hugging Face
                         </ListItem>
                     </List>
